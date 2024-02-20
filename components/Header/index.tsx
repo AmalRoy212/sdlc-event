@@ -38,37 +38,15 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header top-0 left-0 z-40 flex w-full items-center bg-transparent ${
+        className={`header top-0 left-0 z-40 flex w-[91.5%] md:w-[96.5%] items-center bg-transparent mx-5 mt-1 rounded-2xl ${
           sticky
             ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
             : "absolute"
         }`}
       >
+        <img src="/images/logos/GG_WHITE.png" className="top-0 left-0 w-[80px]" alt="" />
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
-              <Link
-                href="/"
-                className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
-                } `}
-              >
-                <Image
-                  src="/images/logo/logo-2.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
-                />
-                <Image
-                  src="/images/logo/logo.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="hidden w-full dark:block"
-                />
-              </Link>
-            </div>
             <div className="flex w-full items-center justify-between px-4">
               <div>
                 <button
@@ -149,8 +127,8 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <Link
+              <div className="flex items-center justify-end pr-16 lg:pr-0 gap-3">
+                {/* <Link
                   href="/signin"
                   className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70 dark:text-white md:block"
                 >
@@ -161,9 +139,27 @@ const Header = () => {
                   className="ease-in-up hidden rounded-md bg-primary py-3 px-8 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
                 >
                   Sign Up
+                </Link> */}
+                <Link
+                  href="/signup"
+                  className="ease-in-up hidden rounded-md bg-primary py-1 px-4 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
+                >
+                  Delegate
+                </Link>
+                <Link
+                  href="/signup"
+                  className="ease-in-up hidden rounded-md bg-primary py-1 px-4 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
+                >
+                  Sponsors
+                </Link>
+                <Link
+                  href="/signup"
+                  className="ease-in-up hidden rounded-md bg-primary py-1 px-4 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
+                >
+                  Speakers
                 </Link>
                 <div>
-                  <ThemeToggler />
+                  {/* <ThemeToggler /> */}
                 </div>
               </div>
             </div>

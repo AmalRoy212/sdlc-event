@@ -21,8 +21,8 @@ export default function Home() {
         <div className="w-full h-full absolute top-0 left-0 z-0" style={{backgroundColor:"rgba(0, 0, 0, 0.53)"}}></div>
         <Hero />
       </div>
-      <Features />
       <Video />
+      <Features />
       <Brands />
       <AboutSectionOne />
       <AboutSectionTwo />

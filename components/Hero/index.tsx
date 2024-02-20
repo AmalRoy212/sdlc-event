@@ -49,7 +49,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="md:w-full h-full absolute top-[8rem] md:top-0 flex justify-center items-center z-[-10]">
+      <div className="md:w-full md:h-full h-[100vh] object-fill absolute top-10 md:top-0 flex justify-center items-center z-[-10]">
         <video
           loop
           muted
@@ -60,7 +60,7 @@ function Hero() {
           src="/videos/bg-vido.mp4/"
         />
       </div>
-      {/* <div className="md:w-[50%]  h-[50%] absolute top-[25rem] left-[-20rem] md:top-[20%] md:left-[50%] justify-center items-center z-[-10] transform md:rotate-90">
+      <div className="md:w-[50%] md:hidden flex  h-[50%] absolute top-[0] left-[-20rem] md:top-[20%] md:left-[50%] justify-center items-center z-[-10] transform md:rotate-90">
         <video
           loop
           muted
@@ -70,7 +70,7 @@ function Hero() {
           className="w-full h-auto object-cover"
           src="/videos/bg-vid-2.mp4/"
         />
-      </div> */}
+      </div>
     </div>
   );
 }
