@@ -4,34 +4,25 @@ import Image from "next/image";
 const brandsData: Brand[] = [
   {
     id: 1,
-    name: "UIdeck",
-    href: "https://uideck.com",
-    image: "/images/brands/uideck.svg",
+    name: "Something",
+    value : 290,
   },
   {
     id: 2,
-    name: "Tailgrids",
-    href: "https://tailgrids.com",
-    image: "/images/brands/tailgrids.svg",
+    name: "Something",
+    value : 290,
   },
   {
     id: 3,
-    name: "Lineicons",
-    href: "https://lineicons.com",
-    image: "/images/brands/lineicons.svg",
+    name: "Something",
+    value : 290,
   },
   {
     id: 4,
-    name: "GrayGrids",
-    href: "https://graygrids.com",
-    image: "/images/brands/graygrids.svg",
+    name: "Something",
+    value : 290,
   },
-  {
-    id: 5,
-    name: "TailAdmin",
-    href: "https://tailadmin.com",
-    image: "/images/brands/tailadmin.svg",
-  },
+  
 ];
 
 const Brands = () => {
@@ -46,7 +37,7 @@ const Brands = () => {
               "
             >
               {brandsData.map((brand) => (
-                <SingleBrand key={brand.id} brand={brand} />
+                <SingleBrand key={brand.id} brand={brand}/>
               ))}
             </div>
           </div>
@@ -59,18 +50,25 @@ const Brands = () => {
 export default Brands;
 
 const SingleBrand = ({ brand }: { brand: Brand }) => {
-  const { href, image, name } = brand;
+  const { value, name } = brand;
 
   return (
-    <div className="mx-3 flex w-full max-w-[160px] items-center justify-center py-[15px] sm:mx-4 lg:max-w-[130px] xl:mx-6 xl:max-w-[150px] 2xl:mx-8 2xl:max-w-[160px]">
-      <a
-        href={href}
-        target="_blank"
-        rel="nofollow noreferrer"
-        className="relative h-10 w-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
+    <div
+      // data-aos-duration={index*300}
+      data-aos="fade-left"
+      className="md:w-1/4 sm:w-1/2 flex justify-center items-center flex-col-reverse z-[1]"
+    >
+      <div
+        className="Welcome-box py-[8px] px-[7px] rounded-2xl border border-[#f842428b] opacity-[0.9] mt-2"
       >
-        <Image src={image} alt={name} fill />
-      </a>
+        <h1 className="Welcome-text text-[15px] mx-3 text-white">{name}</h1>
+      </div>
+      <div className="w-[150px] h-[150px] flex justify-center items-center rounded-full bg-gradient-to-r from-red-500 to-blue-500">
+        <span className="font-large text-5xl text-white">
+          {" "}
+          {value}{"+"}
+        </span>
+      </div>
     </div>
   );
 };
