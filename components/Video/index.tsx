@@ -48,17 +48,17 @@ const Video = () => {
         </div>
       </div>
 
-      <ModalVideo
+      {/* <ModalVideo
         channel="youtube"
         autoplay={true}
         start={true}
         isOpen={isOpen}
         videoId="L61p2uyiMSo"
         onClose={() => setOpen(false)}
-      />
+      /> */}
 
       <div className="absolute bottom-0 left-0 right-0 z-[-1]">
-        <img src="/images/video/shape.svg" alt="shape" className="w-full" />
+        <Image src="/images/video/shape.svg" width={0} height={0} alt="shape" className="w-full" />
       </div>
     </section>
   );

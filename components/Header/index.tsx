@@ -44,7 +44,7 @@ const Header = () => {
             : "absolute"
         }`}
       >
-        <img src="/images/logos/GG_WHITE.png" className="top-0 left-0 w-[80px]" alt="" />
+        <Image src="/images/logos/GG_WHITE.png" className="top-0 left-0 w-[80px]" height={80} width={80} alt="logo" />
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="flex w-full items-center justify-between px-4">
