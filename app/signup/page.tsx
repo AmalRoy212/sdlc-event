@@ -9,12 +9,12 @@ const SignupPage = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[500px] rounded-md bg-primary bg-opacity-5 py-10 px-6 dark:bg-dark sm:p-[60px]">
                 <h3 className="mb-3 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl">
-                  Create your account
+                  Delegate Enquiry
                 </h3>
-                <p className="mb-11 text-center text-base font-medium text-body-color">
+                {/* <p className="mb-11 text-center text-base font-medium text-body-color">
                   It’s totally free and super easy
-                </p>
-                <button className="mb-6 flex w-full items-center justify-center rounded-md bg-white p-3 text-base font-medium text-body-color shadow-one hover:text-primary dark:bg-[#242B51] dark:text-body-color dark:shadow-signUp dark:hover:text-white">
+                </p> */}
+                {/* <button className="mb-6 flex w-full items-center justify-center rounded-md bg-white p-3 text-base font-medium text-body-color shadow-one hover:text-primary dark:bg-[#242B51] dark:text-body-color dark:shadow-signUp dark:hover:text-white">
                   <span className="mr-3">
                     <svg
                       width="20"
@@ -49,11 +49,11 @@ const SignupPage = () => {
                     </svg>
                   </span>
                   Sign up with Google
-                </button>
+                </button> */}
                 <div className="mb-8 flex items-center justify-center">
                   <span className="hidden h-[1px] w-full max-w-[60px] bg-body-color sm:block"></span>
-                  <p className="w-full px-5 text-center text-base font-medium text-body-color">
-                    Or, register with your email
+                  <p className="w-full px-3 text-center text-base font-medium text-body-color">
+                    register with Corporate email
                   </p>
                   <span className="hidden h-[1px] w-full max-w-[60px] bg-body-color sm:block"></span>
                 </div>
@@ -64,12 +64,27 @@ const SignupPage = () => {
                       className="mb-3 block text-sm font-medium text-dark dark:text-white"
                     >
                       {" "}
-                      Full Name{" "}
+                      First name{" "}
                     </label>
                     <input
                       type="text"
                       name="name"
-                      placeholder="Enter your full name"
+                      placeholder="Enter your first name"
+                      className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                    />
+                  </div>
+                  <div className="mb-8">
+                    <label
+                      htmlFor="name"
+                      className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                    >
+                      {" "}
+                      Last name{" "}
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Enter your last name"
                       className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                     />
                   </div>
@@ -88,7 +103,7 @@ const SignupPage = () => {
                       className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                     />
                   </div>
-                  <div className="mb-8">
+                  {/* <div className="mb-8">
                     <label
                       htmlFor="password"
                       className="mb-3 block text-sm font-medium text-dark dark:text-white"
@@ -102,7 +117,7 @@ const SignupPage = () => {
                       placeholder="Enter your Password"
                       className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                     />
-                  </div>
+                  </div> */}
                   <div className="mb-8 flex">
                     <label
                       htmlFor="checkboxLabel"
@@ -134,8 +149,9 @@ const SignupPage = () => {
                         </div>
                       </div>
                       <span>
-                        By creating account means you agree to the
-                        <a href="#0" className="text-primary hover:underline">
+                        
+ By filling up this form, I agree to the above terms and conditions. I officially and formally mark my acceptance to participate at the event.
+                        {/* <a href="#0" className="text-primary hover:underline">
                           {" "}
                           Terms and Conditions{" "}
                         </a>
@@ -143,20 +159,20 @@ const SignupPage = () => {
                         <a href="#0" className="text-primary hover:underline">
                           {" "}
                           Privacy Policy{" "}
-                        </a>
+                        </a> */}
                       </span>
                     </label>
                   </div>
                   <div className="mb-6">
                     <button className="flex w-full items-center justify-center rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-                      Sign up
+                      Register
                     </button>
                   </div>
                 </form>
                 <p className="text-center text-base font-medium text-body-color">
-                  Already using Startup?
+                  Want to be Sponsor?
                   <Link href="/signin" className="text-primary hover:underline">
-                    Sign in
+                    Sponsors Enquiry
                   </Link>
                 </p>
               </div>
